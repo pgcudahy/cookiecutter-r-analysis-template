@@ -57,13 +57,13 @@ Structure
 
 The resulting analysis project will have the following structure.
 
-project_title
+```project_title
 ├── artifacts - All results are placed in the artifacts directory
 ├── data - Intermediate files are placed in the data directory. These may be modified or deleted.
 ├── dataraw - All original input data is placed in the dataraw directory. They may not be modified or deleted. 
 ├── notebooks - Analysis is done in jupyter notebooks placed in the notebooks directory.
 ├── r - All reusable R code is placed in the r directory
-└── README.md
+└── README.md```
 
 Workflow
 ----------
