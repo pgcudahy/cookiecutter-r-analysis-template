@@ -57,7 +57,8 @@ Structure
 
 The resulting analysis project will have the following structure.
 
-```project_title
+```
+project_title
 ├── artifacts - All results are placed in the artifacts directory
 ├── data - Intermediate files are placed in the data directory. These may be modified or deleted.
 ├── dataraw - All original input data is placed in the dataraw directory. They may not be modified or deleted. 
