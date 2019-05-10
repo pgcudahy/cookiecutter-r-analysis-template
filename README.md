@@ -26,14 +26,6 @@ OR
 brew install cookiecutter
 ```
 
-OR
-
-`conda`:
-
-```
-conda install -c conda-forge cookiecutter
-```
-
 Usage
 -----
 
@@ -41,12 +33,6 @@ Generate a new analysis directory using:
 
 ```
 cookiecutter gh:pgcudahy/cookiecutter-r-analysis-template
-```
-
-If this doesn't work try using SSH with the full path:
-
-```
-cookiecutter git+ssh://git@github.com/pgcudahy/cookiecutter-r-analysis.git
 ```
 
 You will then be asked some questions to set up your project. Leaving answers
@@ -59,18 +45,19 @@ The resulting analysis project will have the following structure.
 
 ```
 project_title
+├── README.md
 ├── artifacts - All results are placed in the artifacts directory
 ├── data - Intermediate files are placed in the data directory. These may be modified or deleted.
 ├── dataraw - All original input data is placed in the dataraw directory. They may not be modified or deleted. 
 ├── notebooks - Analysis is done in jupyter notebooks placed in the notebooks directory.
-├── r - All reusable R code is placed in the r directory
-└── README.md
+└── r - All reusable R code is placed in the r directory. Basic [lintr](https://github.com/jimhester/lintr) configuration file included
+
 ```
 
 Workflow
 ----------
 
- + Input data is put in the `dataraw` directory.
+ + Input data is put in the `dataraw` directory and should not be modified
  + Data is analyzed by Jupyter notebooks in the `notebooks` directory
  + Transformed data which can be recreated is in the `data` directory
  + Output for publication or dissemination is put in the `artifacts` folder
