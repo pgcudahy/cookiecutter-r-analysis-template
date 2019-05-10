@@ -46,12 +46,12 @@ The resulting analysis project will have the following structure.
 ```
 project_title
 ├── README.md
-├── artifacts - All results are placed in the artifacts directory
+├── artifacts - All results are placed in the artifacts directory.
 ├── data - Intermediate files are placed in the data directory. These may be modified or deleted.
 ├── dataraw - All original input data is placed in the dataraw directory. They may not be modified or deleted. 
 ├── notebooks - Analysis is done in jupyter notebooks placed in the notebooks directory.
-└── r - All reusable R code is placed in the r directory. Basic [lintr](https://github.com/jimhester/lintr) configuration file included
-
+└── r - All reusable R code is placed in the r directory.
+    └──.lintr - lintr (https://github.com/jimhester/lintr) configuration file.
 ```
 
 Workflow
