@@ -46,11 +46,11 @@ The resulting analysis project will have the following structure.
 ```
 project_title
 ├── README.md
-├── artifacts - All results (eg plots, tables) are placed in the artifacts directory.
-├── data - Intermediate files (eg cleaned dataframes) are placed in the data directory. These may be modified or deleted.
-├── dataraw - All original input data is placed in the dataraw directory. They may not be modified or deleted. 
-├── notebooks - Analysis is done in jupyter notebooks placed in the notebooks directory.
-└── r - All reusable R code is placed in the r directory.
+├── artifacts - All results (eg figures, tables)
+├── data - Intermediate data files (eg cleaned dataframes). These may be modified or deleted.
+├── dataraw - All original input data. These may not be modified or deleted. 
+├── notebooks - Jupyter notebooks documenting all analysis.
+└── r - Reusable R code (eg convenience functions).
     └──.lintr - lintr (https://github.com/jimhester/lintr) configuration file.
 ```
 
@@ -59,8 +59,8 @@ Workflow
 
  + Raw input data is put in the `dataraw` directory and should not be modified
  + Data is analyzed by Jupyter notebooks in the `notebooks` directory
- + `R` source code (convenience functions) used in the data analysis is put in the `r` folder
- + Transformed datasets which can be reproducibly created by the notebooks are in the `data` directory
+ + Custom `R` source code used in the data analysis is put in the `r` folder
+ + Transformed datasets are saved in the `data` directory. Must be able to be reproduced from the raw data and notebooks.
  + Output for publication or dissemination is put in the `artifacts` folder
 
 License
