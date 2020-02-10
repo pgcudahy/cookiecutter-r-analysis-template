@@ -1,7 +1,7 @@
 R data analysis template
 ========================
 
-My template for setting up an R analysis project. This template uses
+My template for automatically setting up a new data analysis project using [R](https://www.r-project.org/about.html). This template uses
 [cookiecutter](https://github.com/audreyr/cookiecutter), a Python templating
 tool, to setup a directory structure.
 
