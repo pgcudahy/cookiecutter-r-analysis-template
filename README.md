@@ -59,7 +59,7 @@ Environment
 
   After setting up the directory environment:
   + [renv](https://rstudio.github.io/renv/) is installed and used to manage a reproducible R environment
-  + [Git] (https://git-scm.com/) is initialized and an initial commit is made
+  + [Git](https://git-scm.com/) is initialized and an initial commit is made
 
 Workflow
 --------
