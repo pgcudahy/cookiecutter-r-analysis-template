@@ -1,9 +1,9 @@
 R data analysis template
 ========================
 
-My template for automatically setting up a new data analysis project using [R](https://www.r-project.org/about.html). This template uses
-[cookiecutter](https://github.com/audreyr/cookiecutter), a Python templating
-tool, to setup a directory structure.
+My template for automatically setting up a new data analysis project using [R](https://www.r-project.org/about.html).
+This template uses [cookiecutter](https://github.com/audreyr/cookiecutter), a Python templating tool, to setup a directory structure,
+set up an [renv](https://rstudio.github.io/renv/) reproducible environment, and initialize git.
 
 Acknowledgements
 ----------------
@@ -20,9 +20,9 @@ Install `cookiecutter` using `pip`:
 pip install cookiecutter
 ```
 
-OR
+**OR**
 
-`homebrew`:
+Install `cookiecutter` using `homebrew`:
 
 ```
 brew install cookiecutter
@@ -31,7 +31,7 @@ brew install cookiecutter
 Usage
 -----
 
-Generate a new analysis directory using:
+Generate a new project using:
 
 ```
 cookiecutter gh:pgcudahy/cookiecutter-r-analysis-template
@@ -43,8 +43,7 @@ blank will select the default (shown in [brackets]).
 Structure
 ---------
 
-The resulting analysis project will have the following structure.
-
+The resulting data analysis project will have the following structure:
 ```
 project_title
 ├── README.md
@@ -55,6 +54,13 @@ project_title
 └── r - Reusable R code (eg convenience functions).
 ```
 
+Environment
+-----------
+
+  After setting up the directory environment:
+  + [renv](https://rstudio.github.io/renv/) is installed and used to manage a reproducible R environment
+  + [Git](https://git-scm.com/) is initialized and an initial commit is made
+
 Workflow
 --------
 
@@ -63,12 +69,6 @@ Workflow
  + Custom `R` source code used in the data analysis is put in the `r` folder
  + Transformed datasets are saved in the `data` directory. Must be able to be reproduced from the raw data and notebooks.
  + Output for publication or dissemination is put in the `artifacts` folder
-
- Environment
- -----------
-  After setting up the directory environment:
-  + [renv](https://rstudio.github.io/renv/) is installed and used to manage the R environment
-  + Git is initialized an initial commit is made
 
 License
 -------
