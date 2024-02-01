@@ -9,6 +9,7 @@ Rscript -e "install.packages('renv', repos='http://cran.us.r-project.org')"
 Rscript -e "renv::init()"
 # Installing tidyverse from source takes forever! However from
 # binary, stringi often fails. So let's do that one from source
+Rscript -e "renv::purge(c('stringi'))"
 Rscript -e "renv::install(c('stringi'))"
 Rscript -e "renv::install(c('tidyverse', 'IRkernel'), type = 'binary')"
 Rscript -e "IRkernel::installspec()"
