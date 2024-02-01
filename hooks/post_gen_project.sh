@@ -7,7 +7,7 @@ Rscript -e "install.packages('renv', repos='http://cran.us.r-project.org')"
 
 # initialize new package-specific environment / private library;
 Rscript -e "renv::init()"
-Rscript -e "install.packages(c('tidyverse', 'irkernel'), repos='http://cran.us.r-project.org')"
+Rscript -e "install.packages(c('tidyverse', 'IRkernel'), repos='http://cran.us.r-project.org')"
 Rscript -e "IRkernel::installspec()"
 Rscript -e "renv::snapshot(confirm = FALSE)"
 
