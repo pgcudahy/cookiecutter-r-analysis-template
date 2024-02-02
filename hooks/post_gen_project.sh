@@ -8,7 +8,7 @@ Rscript -e "install.packages('renv', repos='http://cran.us.r-project.org')"
 # Initialize new package-specific environment / private library;
 Rscript -e "renv::init()"
 # Installing from source takes forever, but couldn't get binary to work
-Rscript -e "renv::install(c('tidyverse', 'IRkernel'))"
+Rscript -e "renv::install(c('tidyverse', 'IRkernel', 'languageserver'))"
 Rscript -e "IRkernel::installspec()"
 Rscript -e "renv::snapshot(confirm = FALSE)"
 
