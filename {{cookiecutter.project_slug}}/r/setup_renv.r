@@ -3,9 +3,9 @@ if(!require("pak")) install.packages("pak")
 if(!require("renv")) install.packages("renv")
 
 # Initialize new package-specific environment
-renv::init()
 # Per https://github.com/rstudio/renv/issues/1210
-renv::config(renv.config.pak.enabled = TRUE)
-renv::config(renv.config.auto.snapshot = TRUE)
-renv::install(c('pak', 'tidyverse', 'IRkernel', 'languageserver'))
+options(renv.config.pak.enabled = TRUE)
+options(renv.config.auto.snapshot = TRUE)
+renv::init()
+renv::install(c('pak', 'tidyverse', 'IRkernel', 'languageserver'), prompt = FALSE)
 IRkernel::installspec()
