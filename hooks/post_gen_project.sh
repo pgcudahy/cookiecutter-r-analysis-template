@@ -6,7 +6,7 @@
 Rscript -e "install.packages('pak')"
 Rscript -e "pak::pkg_install('renv', ask = FALSE)"
 
-# initialize new package-specific environment / private library;
+# Initialize new package-specific environment / private library;
 Rscript -e "renv::init()"
 Rscript -e "install.packages('pak')"
 Rscript -e "pak::pkg_install(c('tidyverse', 'irkernel'), ask = FALSE)"
