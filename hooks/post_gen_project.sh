@@ -3,11 +3,13 @@
 # Adapted from https://github.com/khughitt/cookiecutter-rmd-data-science
 
 # install renv
-Rscript -e "install.packages('renv', repos='http://cran.us.r-project.org')"
+Rscript -e "install.packages('pak')"
+Rscript -e "pak::pkg_install('renv', ask = FALSE)"
 
 # initialize new package-specific environment / private library;
 Rscript -e "renv::init()"
-Rscript -e "install.packages(c('tidyverse', 'irkernel'), repos='http://cran.us.r-project.org')"
+Rscript -e "install.packages('pak')"
+Rscript -e "pak::pkg_install(c('tidyverse', 'irkernel'), ask = FALSE)"
 Rscript -e "IRkernel::installspec()"
 Rscript -e "renv::snapshot(confirm = FALSE)"
 
