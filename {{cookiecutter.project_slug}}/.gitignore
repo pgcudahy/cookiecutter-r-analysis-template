@@ -3,3 +3,25 @@
 
 # OS X
 .DS_Store
+
+# R https://github.com/github/gitignore/blob/main/R.gitignore
+.Rproj.user/
+.Rhistory
+.Rapp.history
+.RData
+.RDataTmp
+.Ruserdata
+# OAuth2 token, see https://github.com/hadley/httr/releases/tag/v0.3
+.httr-oauth
+
+# Environments
+.env
+.renv
+.venv
+env/
+renv/
+venv/
+ENV/
+env.bak/
+renv.nak/
+venv.bak/
