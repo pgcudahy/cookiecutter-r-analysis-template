@@ -1,4 +1,4 @@
-#filter output from jupyter notebooks
+#filter output from jupyter notebooks when committing to git
 [filter "jupyternotebook"]
 	clean = "jupyter nbconvert --ClearOutputPreprocessor.enabled=True --to=notebook --stdin --stdout --log-level=ERROR"
 	required

@@ -1,2 +1,2 @@
-# Fiter output from jupyter notebooks
+# Fiter output from jupyter notebooks when commiting to git
 *.ipynb filter=jupyternotebook
