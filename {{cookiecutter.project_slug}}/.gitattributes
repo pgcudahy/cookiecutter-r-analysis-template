@@ -1,0 +1,2 @@
+# Fiter output from jupyter notebooks
+*.ipynb filter=jupyternotebook

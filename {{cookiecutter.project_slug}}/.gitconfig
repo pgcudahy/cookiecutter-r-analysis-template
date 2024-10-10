@@ -1,0 +1,4 @@
+#filter output from jupyter notebooks
+[filter "jupyternotebook"]
+	clean = "jupyter nbconvert --ClearOutputPreprocessor.enabled=True --to=notebook --stdin --stdout --log-level=ERROR"
+	required
