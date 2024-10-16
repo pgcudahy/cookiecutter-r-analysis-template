@@ -1,5 +1,8 @@
-# Jupyter
+# jupyter
 .ipynb_checkpoints
+
+# jupyterlab-lsp
+.virtual_documents/
 
 # OS X
 .DS_Store
